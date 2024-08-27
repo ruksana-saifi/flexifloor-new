@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "hero_image_video_AWt4wk": {
@@ -7,7 +16,6 @@
           "type": "video",
           "settings": {
             "video_link": "",
-            "video_image": "shopify:\/\/shop_images\/hero_2.png",
             "overlay_opacity": 20,
             "title": "Transform Your Space With Flexifloor Solutions",
             "title_alignment": "left",
@@ -25,7 +33,7 @@
       ],
       "settings": {
         "top_text": "4.9",
-        "image": "shopify:\/\/shop_images\/Frame_5524.png",
+        "image": "shopify:\/\/shop_images\/hero_2.webp",
         "bottom_text": "Based on 200+ Reviews"
       }
     },
@@ -34,11 +42,9 @@
       "settings": {
         "heading_text": "Who we are?",
         "subheading_text": "<p>Our passion is to offer you <strong>top-notch flooring<\/strong> that combines <strong>superior aesthetics<\/strong> with <strong>unparalleled durability<\/strong>. Whether you’re a DIY enthusiast or a first-time installer, enjoy stunning, eco-friendly floors that last, with <strong>support every step<\/strong> of the way.<\/p>",
-        "product_1_image": "shopify:\/\/shop_images\/p1.png",
         "product_1_title": "Flexifloor Hardwood",
         "product_1_description": "Jorem ipsum dolor sit amet, consectetur adipiscing ipsum dolor elit.",
         "product_1_link": "",
-        "product_2_image": "shopify:\/\/shop_images\/p2.png",
         "product_2_title": "Flexifloor Tiles",
         "product_2_description": "Jorem ipsum dolor sit amet, consectetur adipiscing ipsum dolor elit.",
         "product_2_link": ""
@@ -50,7 +56,6 @@
         "image_mEXTY4": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Rectangle_23.png",
             "alt_text": "Image description",
             "product": "flexifloor-tiles"
           }
@@ -58,7 +63,6 @@
         "image_EVNL3k": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Rectangle_24.png",
             "alt_text": "Image description",
             "product": "flexifloor-tiles-copy"
           }
@@ -66,7 +70,6 @@
         "image_FRG6bF": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Rectangle_23.png",
             "alt_text": "Image description",
             "product": "flexifloor-tiles"
           }
@@ -74,7 +77,6 @@
         "image_NgTArY": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Rectangle_24.png",
             "alt_text": "rf",
             "product": "flexifloor-tiles-copy"
           }
@@ -168,8 +170,7 @@
         "testi_heading": "Why Flexifoor?",
         "main_title": "<p>Transform your space <strong>hassle free <\/strong>with Flexifloor simple installation solution.<\/p>",
         "button_link": "#",
-        "button_text": "Shop Now",
-        "testi-img": "shopify:\/\/shop_images\/Rectangle_27.png"
+        "button_text": "Shop Now"
       }
     },
     "promo_banner_JzWGeD": {
@@ -229,15 +230,13 @@
         "custom-table_title": "The Best Flooring Solution on the Market",
         "flexifloor_title": "Flexifloor",
         "cta_text": "Ready to enhance your space with Flexifloor?",
-        "cta_url": "#",
-        "cta_image": "shopify:\/\/shop_images\/Frame_5536_eee3c278-c2ac-49c7-b107-343a2c365a43.png"
+        "cta_url": "#"
       }
     },
     "custom_review_section_r3jDEV": {
       "type": "custom-review-section",
       "settings": {
         "section_heading": "Happy Customers Spaces",
-        "review_image_1": "shopify:\/\/shop_images\/Rectangle_23_655101d7-74c2-4925-9966-fe646b4b89f2.png",
         "review_text_1": "Flexifloor made my DIY project a breeze! The installation was simple, and the guides were incredibly helpful. The result is stunning, and I saved a lot of time and money doing it myself.",
         "review_name_1": "Arnie M.",
         "review_role_1": "Designer"
