@@ -1,6 +1,15 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "current": {
-    "logo": "shopify:\/\/shop_images\/Logo_Blue_Full.png",
+    "logo": "shopify:\/\/shop_images\/Logo_White_Full.webp",
     "logo2": "shopify:\/\/shop_images\/Logo_White_Full.png",
     "logo_width": 150,
     "favicon": "shopify:\/\/shop_images\/Letterform_-_Square.png",
