@@ -1,0 +1,85 @@
+
+<section class="features-section cmn-padding">
+  <div class="page-width">
+     <h4 class="heading">{{ section.settings.heading_text }}</h4>
+    <div class="features-grid">
+      {% for block in section.blocks %}
+        <div class="feature-item">
+          <h3>{{ block.settings.title }}</h3>
+          <p>{{ block.settings.description }}</p>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Features Section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading_text",
+      "label": "Heading Text",
+      "default": "Why Flexifloor?"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "feature_block",
+      "name": "Feature Block",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Feature Title"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Description",
+          "default": "Feature Description"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Features Section",
+      "category": "Custom",
+      "blocks": [
+        {
+          "type": "feature_block",
+          "settings": {
+            "title": "6 Perfect Shades",
+            "description": "Discover the perfect match for your decor with Flexifloor's six expertly curated shades. Each color is designed to bring elegance and warmth to any space."
+          }
+        },
+        {
+          "type": "feature_block",
+          "settings": {
+            "title": "Easy to Install",
+            "description": "Transform your space effortlessly with Flexifloor's DIY-friendly installation. Our detailed guides and support make it simple for anyone to achieve professional results."
+          }
+        },
+        {
+          "type": "feature_block",
+          "settings": {
+            "title": "100% Eco-Friendly",
+            "description": "Choose Flexifloor for a greener home. Our flooring is made from 100% eco-friendly materials, ensuring sustainability without compromising on quality."
+          }
+        },
+        {
+          "type": "feature_block",
+          "settings": {
+            "title": "Durable & Safe",
+            "description": "Enjoy peace of mind with Flexifloor's durable, safe flooring. Our products are built to withstand daily wear and tear while providing a secure, hypoallergenic surface for your home."
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
+

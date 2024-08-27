@@ -1,0 +1,279 @@
+.solution-market-slider-main-header {
+  overflow-x: scroll;
+}
+
+#solutino-market-slider-main {
+  margin: 150px 75px;
+}
+
+.solution-slider-main-div {
+  max-width: 1770px;
+  width: 100%;
+  margin: auto;
+
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.solution-header-main-text h6 {
+  font-family: Helvetica Now Display;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  margin: 0;
+  color: #cccccc;
+}
+
+.solution-header-main-text h2 {
+  margin: 0;
+  font-family: Helvetica Now Display;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  width: 502px;
+}
+
+.solution-header-main-text h2 span {
+  color: #2783d2;
+}
+#solutino-market-slider-main table tr th {
+  font-family: Helvetica Now Display;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28.8px;
+  letter-spacing: -0.02em;
+  color: #cccccc;
+}
+
+.solution-header-main-text {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* table */
+#solutino-market-slider-main table {
+  border-spacing: 0;
+  border-collapse: unset;
+}
+
+#solutino-market-slider-main table tr th,
+#solutino-market-slider-main table tr td {
+  padding: 20px 30px;
+  text-align: left;
+}
+
+#solutino-market-slider-main table tr td {
+  border-top: 1px solid black;
+font-family: Helvetica Now Display;
+font-size: 16px;
+font-weight: 500;
+line-height: 24px;
+  color:#000000;
+}
+
+.table td:first-child {
+}
+
+#solutino-market-slider-main table td:first-child {
+  padding: 20px 32px;
+  background-color: #007aff;
+  font-weight: bold;
+  width: 706px;
+  color: #ffffff;
+  /* display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 20px; */
+  align-items: center;
+  border-top: 1px solid #ffffff4d;
+}
+
+.last-table-data-collection {
+}
+
+#solutino-market-slider-main table tr:last-child td:first-child {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+/* Target the first column in the header row */
+#solutino-market-slider-main table th:first-child {
+  width: 706px;
+  background-color: #007aff;
+  color: #ffffff;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.table-svg {
+  width: 40px;
+  height: 40px;
+
+  background: #ffffff33;
+  display: inline-flex;
+  margin-right: 20px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+}
+
+.table-inner-grid {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+
+  font-family: Helvetica Now Display;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+@media only screen and (max-width: 1440px) {
+  #solutino-market-slider-main table th:first-child,
+  #solutino-market-slider-main table td:first-child {
+    width: 410px;
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  #solutino-market-slider-main table th:first-child,
+  #solutino-market-slider-main table td:first-child {
+    width: 300px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  #solutino-market-slider-main .scroll-table-container {
+    position: relative;
+    width: calc(100% - 40px);
+    /* Adjust for margins */
+    margin: 0 20px;
+    /* 20px space on both sides */
+    overflow: hidden;
+  }
+
+  #solutino-market-slider-main .table-container {
+    overflow-x: scroll;
+    /* Enable horizontal scrolling */
+    height: 100%;
+    padding-bottom: 12px;
+    /* Adjust for scrollbar height */
+    box-sizing: border-box;
+
+    /* Hide default scrollbar in WebKit browsers */
+    scrollbar-width: none;
+    /* Hide scrollbar in Firefox */
+  }
+
+  #solutino-market-slider-main .table-container::-webkit-scrollbar {
+    display: none;
+    /* Hide scrollbar in WebKit browsers */
+  }
+
+  #solutino-market-slider-main .custom-scrollbar {
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    /* Start after the left margin */
+    height: 4px;
+    /* Height of the custom scrollbar thumb */
+    width: calc(100% - 40px);
+    /* Full width including the margins */
+    background-color: #0000000d;
+    /* Track color */
+    overflow: hidden;
+    border-radius: 2px;
+  }
+
+  #solutino-market-slider-main .custom-scrollbar-thumb {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 150px;
+    /* Fixed width for the thumb */
+    background-color: #2783d2;
+    /* Thumb color */
+    border-radius: 2px;
+    cursor: pointer;
+  }
+
+  .table-container table {
+    width: 100%;
+    min-width: 1120px;
+    overflow-x: scroll;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+  }
+
+  .table-container {
+    overflow-x: scroll;
+  }
+
+  #solutino-market-slider-main table td:nth-child(2) {
+    /* Styles for all cells in the second row */
+    width: 280px;
+  }
+
+  #solutino-market-slider-main table th:nth-child(2) {
+    width: 280px;
+    max-width: 280px;
+  }
+
+  #solutino-market-slider-main table td:nth-child(3) {
+    width: 280px;
+    max-width: 280px;
+  }
+
+  #solutino-market-slider-main table th:nth-child(3) {
+    width: 280px;
+    max-width: 280px;
+  }
+
+  #solutino-market-slider-main table td:nth-child(4) {
+    width: 280px;
+    max-width: 280px;
+  }
+
+  #solutino-market-slider-main table th:nth-child(4) {
+    width: 280px;
+    max-width: 280px;
+  }
+
+  #solutino-market-slider-main table th:first-child,
+  #solutino-market-slider-main table td:first-child {
+    width: 280px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .solution-header-main-text {
+    padding: 0px 20px;
+  }
+
+  .solution-header-main-text h2 {
+    font-size: 36px;
+    line-height: 36px;
+    width: 100%;
+  }
+
+  #solutino-market-slider-main {
+    margin: 0;
+    padding: 60px 0px;
+  }
+
+  .solution-header-main-text h6 {
+    font-size: 18px;
+    line-height: 21.6px;
+  }
+
+ #solutino-market-slider-main table tr th,
+ #solutino-market-slider-main table tr td,
+  #solutino-market-slider-main table td:first-child {
+    padding: 20px;
+  }
+}

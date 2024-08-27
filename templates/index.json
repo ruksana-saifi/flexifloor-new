@@ -1,0 +1,257 @@
+{
+  "sections": {
+    "hero_image_video_AWt4wk": {
+      "type": "Hero_Image_video",
+      "blocks": {
+        "video_FaBQVR": {
+          "type": "video",
+          "settings": {
+            "video_link": "",
+            "video_image": "shopify:\/\/shop_images\/hero_2.png",
+            "overlay_opacity": 20,
+            "title": "Transform Your Space With Flexifloor Solutions",
+            "title_alignment": "left",
+            "text": "<p>Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.<\/p>",
+            "color_text": "#ffffff",
+            "button_label": "Shop Now",
+            "button_link": "#",
+            "color_btn_bg": "#2783d2",
+            "color_btn_text": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "video_FaBQVR"
+      ],
+      "settings": {
+        "top_text": "4.9",
+        "image": "shopify:\/\/shop_images\/Frame_5524.png",
+        "bottom_text": "Based on 200+ Reviews"
+      }
+    },
+    "who_we_are_ncFiVT": {
+      "type": "who-we-are",
+      "settings": {
+        "heading_text": "Who we are?",
+        "subheading_text": "<p>Our passion is to offer you <strong>top-notch flooring<\/strong> that combines <strong>superior aesthetics<\/strong> with <strong>unparalleled durability<\/strong>. Whether you’re a DIY enthusiast or a first-time installer, enjoy stunning, eco-friendly floors that last, with <strong>support every step<\/strong> of the way.<\/p>",
+        "product_1_image": "shopify:\/\/shop_images\/p1.png",
+        "product_1_title": "Flexifloor Hardwood",
+        "product_1_description": "Jorem ipsum dolor sit amet, consectetur adipiscing ipsum dolor elit.",
+        "product_1_link": "",
+        "product_2_image": "shopify:\/\/shop_images\/p2.png",
+        "product_2_title": "Flexifloor Tiles",
+        "product_2_description": "Jorem ipsum dolor sit amet, consectetur adipiscing ipsum dolor elit.",
+        "product_2_link": ""
+      }
+    },
+    "product_carousel_section_CmQ3dd": {
+      "type": "product-carousel-section",
+      "blocks": {
+        "image_mEXTY4": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_23.png",
+            "alt_text": "Image description",
+            "product": "flexifloor-tiles"
+          }
+        },
+        "image_EVNL3k": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_24.png",
+            "alt_text": "Image description",
+            "product": "flexifloor-tiles-copy"
+          }
+        },
+        "image_FRG6bF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_23.png",
+            "alt_text": "Image description",
+            "product": "flexifloor-tiles"
+          }
+        },
+        "image_NgTArY": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_24.png",
+            "alt_text": "rf",
+            "product": "flexifloor-tiles-copy"
+          }
+        }
+      },
+      "block_order": [
+        "image_mEXTY4",
+        "image_EVNL3k",
+        "image_FRG6bF",
+        "image_NgTArY"
+      ],
+      "settings": {
+      }
+    },
+    "features_section_GVAUFB": {
+      "type": "features-section",
+      "blocks": {
+        "feature_block_enYzaT": {
+          "type": "feature_block",
+          "settings": {
+            "title": "6 Perfect Shades",
+            "description": "Discover the perfect match for your decor with Flexifloor's six expertly curated shades. Each color is designed to bring elegance and warmth to any space."
+          }
+        },
+        "feature_block_Y7jxNk": {
+          "type": "feature_block",
+          "settings": {
+            "title": "Easy to Install",
+            "description": "Transform your space effortlessly with Flexifloor's DIY-friendly installation. Our detailed guides and support make it simple for anyone to achieve professional results."
+          }
+        },
+        "feature_block_tbbaKB": {
+          "type": "feature_block",
+          "settings": {
+            "title": "100% Eco-Friendly",
+            "description": "Choose Flexifloor for a greener home. Our flooring is made from 100% eco-friendly materials, ensuring sustainability without compromising on quality."
+          }
+        },
+        "feature_block_UpgNdw": {
+          "type": "feature_block",
+          "settings": {
+            "title": "Durable & Safe",
+            "description": "Enjoy peace of mind with Flexifloor's durable, safe flooring. Our products are built to withstand daily wear and tear while providing a secure, hypoallergenic surface for your home."
+          }
+        }
+      },
+      "block_order": [
+        "feature_block_enYzaT",
+        "feature_block_Y7jxNk",
+        "feature_block_tbbaKB",
+        "feature_block_UpgNdw"
+      ],
+      "settings": {
+        "heading_text": "Why Flexifloor?"
+      }
+    },
+    "image_testimonials_fKWaHr": {
+      "type": "image-testimonials",
+      "blocks": {
+        "review_egbYbC": {
+          "type": "review",
+          "settings": {
+            "review_text": "<p>Flexifloor made my DIY project a breeze! The installation was simple, and the guides were incredibly helpful. The result is stunning, and I saved a lot of time and money doing it myself.<\/p>",
+            "author_name": "Arnie M.",
+            "author_title": "Designer"
+          }
+        },
+        "review_DUDRx9": {
+          "type": "review",
+          "settings": {
+            "review_text": "<p>Flexifloor offers the perfect blend of beauty and durability. The realistic textures impress my clients every time. The easy installation saves valuable time on projects.<\/p>",
+            "author_name": "John Doe",
+            "author_title": "Designer"
+          }
+        },
+        "review_8ybhdH": {
+          "type": "review",
+          "settings": {
+            "review_text": "<p>The durable and safe materials are perfect for high-traffic areas, and the easy installation process means we can finish jobs quickly. My clients love the results.<\/p>",
+            "author_name": "John Doe",
+            "author_title": "Designer"
+          }
+        }
+      },
+      "block_order": [
+        "review_egbYbC",
+        "review_DUDRx9",
+        "review_8ybhdH"
+      ],
+      "settings": {
+        "testi_heading": "Why Flexifoor?",
+        "main_title": "<p>Transform your space <strong>hassle free <\/strong>with Flexifloor simple installation solution.<\/p>",
+        "button_link": "#",
+        "button_text": "Shop Now",
+        "testi-img": "shopify:\/\/shop_images\/Rectangle_27.png"
+      }
+    },
+    "promo_banner_JzWGeD": {
+      "type": "promo-banner",
+      "settings": {
+        "banner_text": "Get Started Now. Pay later.",
+        "banner_subtext": "We make it super simple to start your own online store today and pay over time.",
+        "apr_text": "0%",
+        "down_payment_text": "0%",
+        "monthly_payments_text": "4+"
+      }
+    },
+    "flooring_table_YgHYEX": {
+      "type": "flooring-table",
+      "blocks": {
+        "comparison_feature_8wcfGj": {
+          "type": "comparison_feature",
+          "settings": {
+            "icon_type": "cross",
+            "feature_other": "Integer scelerisque, ac rutrum odio mattis. Aenean lobortis taciti.",
+            "feature_flexfloor": "Fusce ultricies, ac fermentum odio mattis. Mauris vehicula taciti sociosqu."
+          }
+        },
+        "comparison_feature_FptqgA": {
+          "type": "comparison_feature",
+          "settings": {
+            "icon_type": "cross",
+            "feature_other": "Suspendisse varius, ac gravida odio mattis. Phasellus nec taciti.",
+            "feature_flexfloor": "Donec imperdiet, ac dapibus odio mattis. Pellentesque habitan."
+          }
+        },
+        "comparison_feature_NKrc49": {
+          "type": "comparison_feature",
+          "settings": {
+            "icon_type": "cross",
+            "feature_other": "Cras efficitur, ac tristique odio mattis.",
+            "feature_flexfloor": "Vestibulum pharetra, ac sollicitudin odio mattis."
+          }
+        },
+        "comparison_feature_Mcy7AE": {
+          "type": "comparison_feature",
+          "settings": {
+            "icon_type": "cross",
+            "feature_other": "Vivamus luctus, ac pulvinar odio mattis. Morbi dictum taciti sociosqu.",
+            "feature_flexfloor": "Pellentesque convallis, ac posuere odio mattis."
+          }
+        }
+      },
+      "block_order": [
+        "comparison_feature_8wcfGj",
+        "comparison_feature_FptqgA",
+        "comparison_feature_NKrc49",
+        "comparison_feature_Mcy7AE"
+      ],
+      "settings": {
+        "others_title": "Others",
+        "custom-table_title": "The Best Flooring Solution on the Market",
+        "flexifloor_title": "Flexifloor",
+        "cta_text": "Ready to enhance your space with Flexifloor?",
+        "cta_url": "#",
+        "cta_image": "shopify:\/\/shop_images\/Frame_5536_eee3c278-c2ac-49c7-b107-343a2c365a43.png"
+      }
+    },
+    "custom_review_section_r3jDEV": {
+      "type": "custom-review-section",
+      "settings": {
+        "section_heading": "Happy Customers Spaces",
+        "review_image_1": "shopify:\/\/shop_images\/Rectangle_23_655101d7-74c2-4925-9966-fe646b4b89f2.png",
+        "review_text_1": "Flexifloor made my DIY project a breeze! The installation was simple, and the guides were incredibly helpful. The result is stunning, and I saved a lot of time and money doing it myself.",
+        "review_name_1": "Arnie M.",
+        "review_role_1": "Designer"
+      }
+    }
+  },
+  "order": [
+    "hero_image_video_AWt4wk",
+    "who_we_are_ncFiVT",
+    "product_carousel_section_CmQ3dd",
+    "features_section_GVAUFB",
+    "image_testimonials_fKWaHr",
+    "promo_banner_JzWGeD",
+    "flooring_table_YgHYEX",
+    "custom_review_section_r3jDEV"
+  ]
+}

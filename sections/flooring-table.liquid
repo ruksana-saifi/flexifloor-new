@@ -1,0 +1,137 @@
+<section class="custom-flexfloor-section">
+  <div class="page-width">
+  <div class="custom-container">
+    <!-- Left Column: Others -->
+    <div class="left-column background-others">
+      <h2 class="comparison-title-center">{{ section.settings.custom-table_title }}</h2>
+      <h2 class="comparison-title-left">{{ section.settings.others_title }}</h2>
+      <div class="features-comparison">
+        {% for block in section.blocks %}
+          <div class="comparison-row">
+            <p class="feature">
+              <span class="icon {% if block.settings.icon_type == 'cross' %}cross{% else %}check{% endif %}">
+                {% if block.settings.icon_type == 'cross' %}
+                  {% render 'cross-mark' %}
+                  {% else %}
+                    {% render 'check-mark' %}
+                  {% endif %}
+              </span>
+              {{ block.settings.feature_other }}
+            </p>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+
+    <!-- Center Column: Flexifloor -->
+    <div class="center-column background-flexifloor">
+      <h2 class="comparison-title-center">{{ section.settings.custom-table_title }}</h2>
+      <h2 class="comparison-title-center">{{ section.settings.flexifloor_title }}</h2>
+      <div class="features-comparison">
+        {% for block in section.blocks %}
+          <div class="comparison-row">
+            <p class="feature">
+              <span class="icon check">{% render 'check-mark' %}</span>
+              {{ block.settings.feature_flexfloor }}
+            </p>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+
+    <!-- Right Column: CTA with Image -->
+    <div class="right-column background-cta">
+      <img src="{{ section.settings.cta_image | img_url: 'master' }}" alt="Flexifloor Image" class="cta-image"/>
+      <div class="cta-text">
+        <p>{{ section.settings.cta_text }}</p>
+        <a href="{{ section.settings.cta_url }}" class="cta-button">Shop Now</a>
+      </div>
+    </div>
+    </div>
+  </div>
+</section>
+
+
+
+{% schema %}
+{
+  "name": "custom tables",
+  "settings": [
+    {
+      "type": "text",
+      "id": "others_title",
+      "label": "Others Column Title",
+      "default": "Others"
+    },
+    {
+      "type": "text",
+      "id": "custom-table_title",
+      "label": "custom table title",
+      "default": "The Best Flooring Solution on the Market"
+    },
+    {
+      "type": "text",
+      "id": "flexifloor_title",
+      "label": "Flexifloor Column Title",
+      "default": "Flexifloor"
+    },
+    {
+      "type": "text",
+      "id": "cta_text",
+      "label": "CTA Text",
+      "default": "Ready to enhance your space with Flexifloor?"
+    },
+    {
+      "type": "url",
+      "id": "cta_url",
+      "label": "CTA URL"
+    },
+    {
+      "type": "image_picker",
+      "id": "cta_image",
+      "label": "CTA Image"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "comparison_feature",
+      "name": "Comparison Feature",
+      "settings": [
+        {
+          "type": "select",
+          "id": "icon_type",
+          "label": "Icon Type",
+          "options": [
+            {
+              "value": "cross",
+              "label": "Cross (✖)"
+            },
+            {
+              "value": "check",
+              "label": "Check (✔)"
+            }
+          ],
+          "default": "cross"
+        },
+        {
+          "type": "textarea",
+          "id": "feature_other",
+          "label": "Feature - Others",
+          "default": "Insert comparison feature for others here"
+        },
+        {
+          "type": "textarea",
+          "id": "feature_flexfloor",
+          "label": "Feature - Flexifloor",
+          "default": "Insert comparison feature for Flexifloor here"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "custom tables"
+    }
+  ]
+}
+{% endschema %}

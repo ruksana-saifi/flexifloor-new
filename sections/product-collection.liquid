@@ -1,0 +1,541 @@
+<style>
+    #produt-grid-main {
+        margin: 0px 75px;
+    }
+    #produt-grid-main h2{
+        display:none;
+        margin:0;
+  font-family: Helvetica Now Display;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: -0.02em;
+      padding-bottom:40px;
+
+    }
+
+    .product-grid-main-collection-flooring {
+        display: grid;
+        row-gap: 60px;
+        column-gap: 20px;
+        grid-template-columns: repeat(3, 1fr);
+
+        max-width: 1770px;
+        width: 100%;
+        margin: auto;
+    }
+
+    .product-card-main-collection-image {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .product-card-main-collection-image .image {
+        position: relative;
+    }
+
+    .product-card-main-collection-image .image img {
+        width: 100%;
+        max-width: 576px;
+    }
+
+    .main-btn-div {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+    }
+
+    .on_sale span {
+        background: #FF0800;
+        padding: 2px 8px 2px 8px;
+        gap: 10px;
+        border-radius: 5px;
+        color: #FFFFFF;
+
+        font-family: Helvetica Now Display;
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 18px;
+    }
+
+    .New_In span {
+        background: #FFFFFF;
+        padding: 2px 8px 2px 8px;
+        gap: 10px;
+        border-radius: 5px;
+        color: #000000;
+
+        font-family: Helvetica Now Display;
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 18px;
+    }
+
+    .best_seller span {
+        background: #2783D2;
+        padding: 2px 8px 2px 8px;
+        gap: 10px;
+        border-radius: 5px;
+        color: #FFFFFF;
+
+        font-family: Helvetica Now Display;
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 18px;
+    }
+
+    .product-card-main-collection-text {
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+    }
+
+    .review-star-text-collection {
+        display: flex;
+        gap: 5px;
+    }
+  .review-star{
+    display:flex;
+    /* align-items:center; */
+    gap:2px;
+  }
+    .review-rate {
+        font-family: Helvetica Now Display;
+        font-size: 10px;
+        font-weight: 700;
+        line-height: 15px;
+        color: #000000;
+
+    }
+
+    .review-count {
+        font-family: Helvetica Now Display;
+        font-size: 10px;
+        font-weight: 400;
+        line-height: 15px;
+        color: #000000;
+    }
+
+    .product-header-text-collection {
+        display: flex;
+        gap: 2px;
+        flex-direction: column;
+    }
+
+    .product-header-text-header {
+        margin: 0;
+        font-family: Helvetica Now Display;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+    }
+
+    .product-header-text-para {
+        font-family: Helvetica Now Display;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 18px;
+        margin: 0;
+        color: #0000004D;
+    }
+
+    .product-price-collection {
+        display: flex;
+        gap: 5px;
+        padding-top: 10px;
+        align-items: center;
+    }
+
+    .product-price-main {
+        color: #000000;
+        font-family: Helvetica Now Display;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 24px;
+        text-align: left;
+
+    }
+
+    .product-price-dull {
+        font-family: Helvetica Now Display;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 21px;
+        color: #0000004D;
+
+    }
+
+    @media only screen and (max-width: 1440px) {
+        .product-card-main-collection-image .image img {
+            max-width: 410px;
+        }
+    }
+
+    @media only screen and (max-width: 999px) {
+        #produt-grid-main {
+            margin: 0px 40px;
+        }
+
+    }
+
+    @media only screen and (max-width: 768px) {
+        .product-card-main-collection-image .image img {
+            max-width: ;
+        }
+
+        .product-grid-main-collection-flooring {
+            row-gap: 30px;
+            column-gap: 10px;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .product-card-main-collection-image {
+            gap: 15px;
+        }
+
+        .product-card-main-collection-text {
+            gap: 5px;
+        }
+        #produt-grid-main h2{
+            display:block;
+        }
+       #produt-grid-main {
+            margin: 0px;
+            padding:40px 20px
+    }
+    }
+</style>
+
+<div id="produt-grid-main">
+  <h2>Flexifloor Tiles</h2>
+  <div class="product-grid-main-collection-flooring">
+    <div class="product-card-main-collection">
+      <div class="product-card-main-collection-image">
+        <div class="image">
+          <img
+            src="https://cdn.shopify.com/s/files/1/0655/2610/4256/files/produt-main-1.png?v=1723424714"
+            height="auto"
+            width="auto"
+            class="desktop-img"
+          >
+          <img
+            src="https://cdn.shopify.com/s/files/1/0655/2610/4256/files/produt-main-1-mobile.png?v=1723424714"
+            height="auto"
+            width="auto"
+            class="mobile-img"
+          >
+
+          <div class="main-btn-div">
+            <div class="on_sale">
+              <span> On Sale </span>
+            </div>
+            <!-- <div class="New_In">
+              <span> New In </span>
+            </div> -->
+            <div class="best_seller">
+              <span> Best Seller </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card-main-collection-text">
+          <div class="review-star-text-collection">
+            <span class="review-star">
+               {% render 'icon-blue-star' %}
+              {% render 'icon-blue-star' %}
+              {% render 'icon-blue-star' %}
+              {% render 'icon-blue-star' %}
+              {% render 'icon-blue-star' %}
+            </span>
+            <span class="review-rate"> 4.9 / </span>
+            <span class="review-count"> 27 Reviews </span>
+          </div>
+          <div class="product-header-text-collection">
+            <p class="product-header-text-header">Natural Wood</p>
+            <p class="product-header-text-para">Flexifloor Tiles</p>
+          </div>
+          <div class="product-price-collection">
+            <span class="product-price-main">$24.00</span>
+            <span class="product-price-dull">$24.00</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="product-card-main-collection">
+      <div class="product-card-main-collection-image">
+        <div class="image">
+          <img
+            src="https://cdn.shopify.com/s/files/1/0655/2610/4256/files/produt-main-2.png?v=1723424714"
+            height="auto"
+            width="auto"
+            class="desktop-img"
+          >
+          <img
+            src="https://cdn.shopify.com/s/files/1/0655/2610/4256/files/produt-main-2-mobile.png?v=1723424714"
+            height="auto"
+            width="auto"
+            class="mobile-img"
+          >
+
+          <div class="main-btn-div">
+            <!-- <div class="on_sale">
+              <span> On Sale </span>
+            </div> -->
+            <div class="New_In">
+              <span> New In </span>
+            </div>
+            <!-- <div class="best_seller">
+              <span> Best Seller </span>
+            </div> -->
+          </div>
+        </div>
+
+        <div class="product-card-main-collection-text">
+          <div class="review-star-text-collection">
+            <span class="review-star">
+              {% render 'icon-blue-star' %}
+              {% render 'icon-blue-star' %}
+              {% render 'icon-blue-star' %}
+              {% render 'icon-blue-star' %}
+              {% render 'icon-blue-star' %}
+            </span>
+            <span class="review-rate"> 4.9 / </span>
+            <span class="review-count"> 27 Reviews </span>
+          </div>
+          <div class="product-header-text-collection">
+            <p class="product-header-text-header">Light Cloud Beige</p>
+            <p class="product-header-text-para">Flexifloor Tiles</p>
+          </div>
+          <div class="product-price-collection">
+            <span class="product-price-main">$24.00</span>
+            <span class="product-price-dull">$24.00</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="product-card-main-collection">
+      <div class="product-card-main-collection-image">
+        <div class="image">
+          <img
+            src="https://cdn.shopify.com/s/files/1/0655/2610/4256/files/produt-main-3.png?v=1723424714"
+            height="auto"
+            width="auto"
+            class="desktop-img"
+          >
+          <img
+            src="https://cdn.shopify.com/s/files/1/0655/2610/4256/files/produt-main-3-mobile.png?v=1723424714"
+            height="auto"
+            width="auto"
+            class="mobile-img"
+          >
+
+          <div class="main-btn-div">
+            <!-- <div class="on_sale">
+              <span> On Sale </span>
+            </div>
+            <div class="New_In">
+              <span> New In </span>
+            </div> -->
+            <div class="best_seller">
+              <span> Best Seller </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card-main-collection-text">
+          <div class="review-star-text-collection">
+            <span class="review-star">
+               {% render 'icon-blue-star' %}
+              {% render 'icon-blue-star' %}
+              {% render 'icon-blue-star' %}
+              {% render 'icon-blue-star' %}
+              {% render 'icon-blue-star' %}
+            </span>
+            <span class="review-rate"> 4.9 / </span>
+            <span class="review-count"> 27 Reviews </span>
+          </div>
+          <div class="product-header-text-collection">
+            <p class="product-header-text-header">Cacao Brown</p>
+            <p class="product-header-text-para">Flexifloor Tiles</p>
+          </div>
+          <div class="product-price-collection">
+            <span class="product-price-main">$24.00</span>
+            <span class="product-price-dull">$24.00</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="product-card-main-collection">
+      <div class="product-card-main-collection-image">
+        <div class="image">
+          <img
+            src="https://cdn.shopify.com/s/files/1/0655/2610/4256/files/produt-main-3.png?v=1723424714"
+            height="auto"
+            width="auto"
+            class="desktop-img"
+          >
+          <img
+            src="https://cdn.shopify.com/s/files/1/0655/2610/4256/files/produt-main-3-mobile.png?v=1723424714"
+            height="auto"
+            width="auto"
+            class="mobile-img"
+          >
+
+          <div class="main-btn-div">
+            <!-- <div class="on_sale">
+              <span> On Sale </span>
+            </div>
+            <div class="New_In">
+              <span> New In </span>
+            </div> -->
+            <div class="best_seller">
+              <span> Best Seller </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card-main-collection-text">
+          <div class="review-star-text-collection">
+            <span class="review-star">
+               {% render 'icon-blue-star' %}
+              {% render 'icon-blue-star' %}
+              {% render 'icon-blue-star' %}
+              {% render 'icon-blue-star' %}
+              {% render 'icon-blue-star' %}
+            </span>
+            <span class="review-rate"> 4.9 / </span>
+            <span class="review-count"> 27 Reviews </span>
+          </div>
+          <div class="product-header-text-collection">
+            <p class="product-header-text-header">Cacao Brown</p>
+            <p class="product-header-text-para">Flexifloor Tiles</p>
+          </div>
+          <div class="product-price-collection">
+            <span class="product-price-main">$24.00</span>
+            <span class="product-price-dull">$24.00</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="product-card-main-collection">
+      <div class="product-card-main-collection-image">
+        <div class="image">
+          <img
+            src="https://cdn.shopify.com/s/files/1/0655/2610/4256/files/produt-main-1.png?v=1723424714"
+            height="auto"
+            width="auto"
+            class="desktop-img"
+          >
+          <img
+            src="https://cdn.shopify.com/s/files/1/0655/2610/4256/files/produt-main-1-mobile.png?v=1723424714"
+            height="auto"
+            width="auto"
+            class="mobile-img"
+          >
+
+          <div class="main-btn-div">
+            <div class="on_sale">
+              <span> On Sale </span>
+            </div>
+            <div class="New_In">
+              <span> New In </span>
+            </div>
+            <div class="best_seller">
+              <span> Best Seller </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card-main-collection-text">
+          <div class="review-star-text-collection">
+            <span class="review-star">
+               {% render 'icon-blue-star' %}
+              {% render 'icon-blue-star' %}
+              {% render 'icon-blue-star' %}
+              {% render 'icon-blue-star' %}
+              {% render 'icon-blue-star' %}
+            </span>
+            <span class="review-rate"> 4.9 / </span>
+            <span class="review-count"> 27 Reviews </span>
+          </div>
+          <div class="product-header-text-collection">
+            <p class="product-header-text-header">Natural Wood</p>
+            <p class="product-header-text-para">Flexifloor Tiles</p>
+          </div>
+          <div class="product-price-collection">
+            <span class="product-price-main">$24.00</span>
+            <span class="product-price-dull">$24.00</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="product-card-main-collection">
+      <div class="product-card-main-collection-image">
+        <div class="image">
+          <img
+            src="https://cdn.shopify.com/s/files/1/0655/2610/4256/files/produt-main-2.png?v=1723424714"
+            height="auto"
+            width="auto"
+            class="desktop-img"
+          >
+          <img
+            src="https://cdn.shopify.com/s/files/1/0655/2610/4256/files/produt-main-2-mobile.png?v=1723424714"
+            height="auto"
+            width="auto"
+            class="mobile-img"
+          >
+
+          <div class="main-btn-div">
+            <!-- <div class="on_sale">
+              <span> On Sale </span>
+            </div> -->
+            <div class="New_In">
+              <span> New In </span>
+            </div>
+            <!-- <div class="best_seller">
+              <span> Best Seller </span>
+            </div> -->
+          </div>
+        </div>
+
+        <div class="product-card-main-collection-text">
+          <div class="review-star-text-collection">
+            <span class="review-star">
+               {% render 'icon-blue-star' %}
+              {% render 'icon-blue-star' %}
+              {% render 'icon-blue-star' %}
+              {% render 'icon-blue-star' %}
+              {% render 'icon-blue-star' %}
+            </span>
+            <span class="review-rate"> 4.9 / </span>
+            <span class="review-count"> 27 Reviews </span>
+          </div>
+          <div class="product-header-text-collection">
+            <p class="product-header-text-header">Light Cloud Beige</p>
+            <p class="product-header-text-para">Flexifloor Tiles</p>
+          </div>
+          <div class="product-price-collection">
+            <span class="product-price-main">$24.00</span>
+            <span class="product-price-dull">$24.00</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "product-collection",
+  "settings":[],
+  "presets": [
+    {
+      "name" : "product-collection"
+    }
+  ]
+}
+{% endschema %}

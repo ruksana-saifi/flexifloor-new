@@ -1,0 +1,66 @@
+{
+  "sections": {
+    "flexifloor_textbox_k4dUFM": {
+      "type": "flexifloor-textbox",
+      "settings": {
+      }
+    },
+    "banner": {
+      "type": "main-collection-banner",
+      "disabled": true,
+      "settings": {
+        "show_collection_description": false,
+        "show_collection_image": true,
+        "color_scheme": "background-1"
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "disabled": true,
+      "settings": {
+        "products_per_page": 32,
+        "columns_desktop": 4,
+        "pagination_type": "infinite",
+        "image_ratio": "portrait",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "enable_filtering": true,
+        "filter_type": "horizontal",
+        "enable_sorting": true,
+        "columns_mobile": "2"
+      }
+    },
+    "product_collection_fWatyQ": {
+      "type": "product-collection",
+      "settings": {
+      }
+    },
+    "transform_product_mgX47y": {
+      "type": "transform-product",
+      "settings": {
+      }
+    },
+    "flooring_table_Kzme4e": {
+      "type": "flooring-table",
+      "settings": {
+      }
+    },
+    "spaces_collection_flooring_QyK8zF": {
+      "type": "spaces-collection-flooring",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "flexifloor_textbox_k4dUFM",
+    "banner",
+    "product-grid",
+    "product_collection_fWatyQ",
+    "transform_product_mgX47y",
+    "flooring_table_Kzme4e",
+    "spaces_collection_flooring_QyK8zF"
+  ]
+}

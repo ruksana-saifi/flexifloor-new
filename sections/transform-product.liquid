@@ -1,0 +1,316 @@
+{{ 'swiper-bundle.min.css' | asset_url | stylesheet_tag }}
+{{ 'swiper-bundle.min.js' | asset_url | script_tag }}
+
+<style>
+     /* <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> */
+
+   .hello{}
+
+
+     .trasform-slider-main-div h2 {
+         margin: 0;
+         font-family: Helvetica Now Display;
+         font-size: 40px;
+         font-weight: 700;
+         line-height: 40px;
+         letter-spacing: -0.02em;
+
+     }
+
+     .transform-slider-card {
+         display: flex;
+         flex-direction: column;
+         gap: 30px;
+     }
+
+     .transform-slider-card-header {
+         display: flex;
+         flex-direction: column;
+         gap: 10px;
+     }
+
+     .transform-slider-card-header h4 {
+         margin: 0;
+         font-family: Helvetica Now Display;
+         font-size: 32px;
+         font-weight: 700;
+         line-height: 38.4px;
+         letter-spacing: -0.02em;
+         text-align: left;
+     }
+
+     .transform-slider-card-header p {
+         margin: 0;
+         font-family: Helvetica Now Display;
+         font-size: 16px;
+         font-weight: 400;
+         line-height: 24px;
+         text-align: left;
+     }
+     #trasform-slider-main {
+         margin: 150px 75px;
+       /* position:relative; */
+     }
+
+     .trasform-slider-main-div {
+         max-width: 1770px;
+         width: 100%;
+         margin: auto;
+
+         display: flex;
+         flex-direction: column;
+         gap: 40px;
+     }
+
+
+     /* slider  */
+
+
+     #trasform-slider-main .swiper {
+         width: 100%;
+         height: 100%;
+     }
+
+     #trasform-slider-main .swiper-slide {
+         text-align: center;
+         font-size: 18px;
+         background: #fff;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+
+     }
+  #trasform-slider-main .swiper-pagination-progressbar {
+    display:none;
+  }
+
+     #trasform-slider-main .swiper-slide img {
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+     }
+
+     #trasform-slider-main .swiper-pagination-progressbar {
+         background: rgba(0, 0, 0, 0.25);
+         height: 4px;
+         top:auto;
+         bottom:0px;
+     }
+  #trasform-slider-main .swiper-pagination{
+     border-radius:100px;
+   }
+
+     #trasform-slider-main .swiper-pagination-progressbar-fill {
+         background: #2783D2;
+           border-radius: 101px;
+       /* display:none; */
+     }
+
+   @media only screen and (max-width: 1440px) {
+     #trasform-slider-main .swiper-slide img{
+       min-height:220px;
+       border-radius:10px;
+     }
+
+   }
+     @media only screen and (max-width: 768px) {
+        #trasform-slider-main {
+         margin: 60px 20px;
+          padding-bottom:40px;
+          position: relative;
+     }
+           #trasform-slider-main .swiper-slide img {
+         min-height: auto;
+     }
+       .transform-slider-card-header h4{
+          font-size: 24px;
+          line-height: 28.8px;
+
+       }
+       .transform-slider-card-header p{
+         font-size: 16px;
+         line-height: 24px;
+       }
+       #trasform-slider-main .swiper-pagination-progressbar-fill{
+         /* display:block !important; */
+       }
+     }
+   @media only screen and (max-width: 480px) {
+     #trasform-slider-main .swiper-slide{
+        width:260px !important;
+     }
+       #trasform-slider-main .swiper-pagination-progressbar {
+    display:block;
+  }
+
+   }
+</style>
+
+<div id="trasform-slider-main">
+  <div class="trasform-slider-main-div">
+    <h2>Transform Your Space With Flexifloor</h2>
+
+    <div class="swiper transform-slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="transform-slider-card">
+            <div class="transform-slider-card-image">
+              <div class="image">
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0655/2610/4256/files/transform-1.png?v=1723430214"
+                  height="auto"
+                  width="auto"
+                  class="desktop-img"
+                >
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0655/2610/4256/files/transform-1-mobile.png?v=1723430214"
+                  height="auto"
+                  width="auto"
+                  class="mobile-img"
+                >
+              </div>
+            </div>
+            <div class="transform-slider-card-header">
+              <h4>Durable & Safe</h4>
+              <p>
+                Enjoy peace of mind with Flexifloor's durable, safe flooring. Our products are built to withstand daily
+                wear and tear while providing a secure, hypoallergenic surface for your home.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="transform-slider-card">
+            <div class="transform-slider-card-image">
+              <div class="image">
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0655/2610/4256/files/transform-2.png?v=1723430214"
+                  height="auto"
+                  width="auto"
+                  class="desktop-img"
+                >
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0655/2610/4256/files/transform-2-mobile.png?v=1723430214"
+                  height="auto"
+                  width="auto"
+                  class="mobile-img"
+                >
+              </div>
+            </div>
+            <div class="transform-slider-card-header">
+              <h4>Easy to Install</h4>
+              <p>
+                Transform your space effortlessly with Flexifloor’s DIY-friendly installation. Our detailed guides and
+                support make it simple for anyone to achieve professional results.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="transform-slider-card">
+            <div class="transform-slider-card-image">
+              <div class="image">
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0655/2610/4256/files/transform-3.png?v=1723430214"
+                  height="auto"
+                  width="auto"
+                  class="desktop-img"
+                >
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0655/2610/4256/files/transform-3-mobile.png?v=1723430214"
+                  height="auto"
+                  width="auto"
+                  class="mobile-img"
+                >
+              </div>
+            </div>
+            <div class="transform-slider-card-header">
+              <h4>100% Eco-Friendly</h4>
+              <p>
+                Choose Flexifloor for a greener home. Our flooring is made from 100% eco-friendly materials, ensuring
+                sustainability without compromising on quality.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="transform-slider-card">
+            <div class="transform-slider-card-image">
+              <div class="image">
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0655/2610/4256/files/transform-4.png?v=1723430214"
+                  height="auto"
+                  width="auto"
+                  class="desktop-img"
+                >
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0655/2610/4256/files/transform-4-mobile.png?v=1723430214"
+                  height="auto"
+                  width="auto"
+                  class="mobile-img"
+                >
+              </div>
+            </div>
+            <div class="transform-slider-card-header">
+              <h4>6 Perfect Shades</h4>
+              <p>
+                Discover the perfect match for your decor with Flexifloor's six expertly curated shades. Each color is
+                designed to bring elegance and warmth to any space.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="swiper-pagination"></div>
+</div>
+
+<!-- Swiper JS -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
+
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper(".transform-slider", {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      pagination: {
+          el: ".swiper-pagination",
+          type: "progressbar",
+      },
+      breakpoints: {
+         320: {
+              slidesPerView: 1,
+              spaceBetween: 10,
+          },
+          640: {
+              slidesPerView: 2,
+              spaceBetween: 10,
+          },
+          768: {
+              slidesPerView: 4,
+              spaceBetween: 30,
+          },
+          1024: {
+              slidesPerView: 4,
+              spaceBetween: 30,
+          },
+        1920: {
+              slidesPerView: 4,
+              spaceBetween: 30,
+          },
+      },
+  });
+</script>
+
+{% schema %}
+{
+  "name": "transform-product",
+  "settings":[],
+  "presets": [
+    {
+      "name" : "transform-product"
+    }
+  ]
+}
+{% endschema %}

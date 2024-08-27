@@ -1,0 +1,62 @@
+<section class="customer-reviews-section">
+  <div class="page-width">
+    <h2>{{ section.settings.section_heading }}</h2>
+    <div class="customer-reviews-slider">
+      <div class="customer-review-card">
+        <div class="review-image">
+          <img src="{{ section.settings.review_image_1 | image_url }}" alt="Customer Image 1">
+        </div>
+        <div class="review-content">
+           {% for i in (1..5) %}
+             {% render 'star' %}
+          {% endfor %}
+          <p>{{ section.settings.review_text_1 }}</p>
+          <p class="reviewer-name">{{ section.settings.review_name_1 }}</p>
+          <p class="reviewer-role">{{ section.settings.review_role_1 }}</p>
+        </div>
+      </div>
+      <!-- Repeat cards for additional reviews -->
+    </div>
+  </div>
+</section>
+
+
+{% schema %}
+{
+  "name": "Customer Reviews Section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "section_heading",
+      "label": "Section Heading",
+      "default": "Happy Customers Spaces"
+    },
+    {
+      "type": "image_picker",
+      "id": "review_image_1",
+      "label": "Review Image 1"
+    },
+    {
+      "type": "textarea",
+      "id": "review_text_1",
+      "label": "Review Text 1"
+    },
+    {
+      "type": "text",
+      "id": "review_name_1",
+      "label": "Reviewer Name 1"
+    },
+    {
+      "type": "text",
+      "id": "review_role_1",
+      "label": "Reviewer Role 1"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Customer Review Section",
+      "category": "Custom Sections"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,83 @@
+<section class="custom-promo cmn-padding">
+<div class="page-width">
+  <div class="promo-banner">
+    <div class="promo-content">
+      <div class="promo-text">
+        <h2>{{ section.settings.banner_text }}</h2>
+        <p>{{ section.settings.banner_subtext }}</p>
+      </div>
+      <div class="promo-details">
+        {% if section.settings.logo_image != blank %}
+          <div class="promo-logo">
+            <img src="{{ section.settings.logo_image | img_url: '200x' }}" alt="Logo">
+          </div>
+        {% endif %}
+
+        <div class="promo-info">
+          <div class="promo-item">
+            <h2>{{ section.settings.apr_text }}</h2>
+            <p>APR Financing</p>
+          </div>
+          <div class="promo-item">
+            <h2>{{ section.settings.down_payment_text }}</h2>
+            <p>Down Payment</p>
+          </div>
+          <div class="promo-item">
+            <h2>{{ section.settings.monthly_payments_text }}</h2>
+            <p>Monthly Payments</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+{% schema %}
+{
+  "name": "Promo Banner",
+  "settings": [
+    {
+      "type": "text",
+      "id": "banner_text",
+      "label": "Banner Text",
+      "default": "Get Started Now. Pay later."
+    },
+    {
+      "type": "text",
+      "id": "banner_subtext",
+      "label": "Banner Subtext",
+      "default": "We make it super simple to start your own online store today and pay over time."
+    },
+    {
+      "type": "image_picker",
+      "id": "logo_image",
+      "label": "Logo Image"
+    },
+    {
+      "type": "text",
+      "id": "apr_text",
+      "label": "APR Text",
+      "default": "0%"
+    },
+    {
+      "type": "text",
+      "id": "down_payment_text",
+      "label": "Down Payment Text",
+      "default": "0%"
+    },
+    {
+      "type": "text",
+      "id": "monthly_payments_text",
+      "label": "Monthly Payments Text",
+      "default": "4+"
+    }
+  ],
+   "presets": [
+    {
+      "name": "Promo Banner",
+      "category": "Custom Sections"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,103 @@
+<div class="img-testi-data cmn-padding">
+    <div class="page-width">
+        <div class="img-testi-flex">
+          <div class="flexifloor-header">
+              <h4 class="heading">{{ section.settings.testi_heading }}</h4>
+              <div class="sub-text"><h3>{{ section.settings.main_title }}</h3></div>
+            <div class="cmn-button">
+              <a href="{{ section.settings.button_link }}">{{ section.settings.button_text }}</a>
+            </div>
+          </div>
+
+        <div class="flexifloor-content">
+            <div class="flexifloor-image">
+              <img src="{{ section.settings.testi-img | image_url }}" alt="Flexifloor Image">
+            </div>
+            <div class="flexifloor-reviews">
+                {% for review in section.blocks %}
+                    <div class="review">
+                        <div class="review-rating">
+                            {% for i in (1..5) %}
+                               {% render 'star' %}
+                            {% endfor %}
+                        </div>
+                        <div class="reciew-texts">{{ review.settings.review_text }}</div>
+                        <p class="review-author">{{ review.settings.author_name }}</p>
+                        <p class="review-title">{{ review.settings.author_title }}</p>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+          
+        </div>
+    </div>
+</div>
+
+{% schema %}
+{
+  "name": "Image Testimonials",
+  "class": "image-testimonials-sec",
+  "settings": [
+    {
+      "type": "text",
+      "id": "testi_heading",
+      "label": "Heading",
+      "default": "Heading"
+    },
+    {
+      "type": "richtext",
+      "id": "main_title",
+      "label": "Main Title",
+      "default": "<p>Transform your space hassle-free with Flexifloor's simple installation solution.</p>"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button Link"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text",
+      "default": "Shop Now"
+    },
+    {
+      "type": "image_picker",
+      "id": "testi-img",
+      "label": "Image"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "review",
+      "name": "Review",
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "review_text",
+          "label": "Review Text",
+          "default": "<p>This is the best flooring solution!</p>"
+        },
+        {
+          "type": "text",
+          "id": "author_name",
+          "label": "Author Name",
+          "default": "John Doe"
+        },
+        {
+          "type": "text",
+          "id": "author_title",
+          "label": "Author Title",
+          "default": "Designer"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Image Testimonials",
+      "category": "Custom Sections"
+    }
+  ]
+}
+{% endschema %}

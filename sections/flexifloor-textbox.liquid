@@ -1,0 +1,155 @@
+<style>
+  #flexifloor-textbox {
+      margin: 0px 75px;
+  }
+
+  .flexifloor-textbox {
+      display: flex;
+      gap: 30px;
+      flex-direction: column;
+
+      max-width: 1770px;
+      width: 100%;
+      margin: auto;
+      padding: 75px 0px;
+      scrollbar-width: none; 
+  }
+
+  .flexifloor-textbox h1 {
+      margin: 0;
+      font-family: Helvetica Now Display;
+      font-size: 48px;
+      font-weight: 700;
+      line-height: 48px;
+      letter-spacing: -0.02em;
+  }
+
+  .flexfloor-textbox-inner-main {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 30px;
+  }
+
+  .flexfloor-textbox-inner-text-main {
+      display: flex;
+      flex-direction: column;
+      padding: 25px;
+      gap: 10px;
+      border-radius: 10px;
+      border: 1px solid #0000001A;
+  }
+
+  .flexfloor-textbox-inner-text-main p {
+      font-family: Helvetica Now Display;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      margin: 0;
+  }
+
+  .flexfloor-textbox-inner-text-main h5 {
+      font-family: Helvetica Now Display;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 28.8px;
+      letter-spacing: -0.02em;
+      margin: 0;
+  }
+
+  .mobile_none {
+      display: none;
+  }
+
+  @media only screen and (max-width: 1199px) {
+      .flexfloor-textbox-inner-main {
+          grid-template-columns: 1fr 1fr;
+      }
+  }
+
+  @media only screen and (max-width: 768px) {
+      .flexfloor-textbox-inner-main {
+          grid-template-columns: 1fr 1fr;
+      }
+
+      .flexfloor-textbox-inner-text-main p,
+      .flexifloor-textbox h1 {
+          display: none;
+      }
+
+      #flexifloor-textbox {
+          margin: 0;
+      }
+
+      .flexifloor-textbox {
+          padding: 10px 0px;
+          overflow-x: scroll;
+      }
+
+      .flexfloor-textbox-inner-text-main {
+          padding: 0;
+          border: none;
+      }
+
+      .flexfloor-textbox-inner-main {
+          grid-template-columns: 1fr 1fr 1fr 1fr;
+          gap: 10px;
+      }
+
+      .flexfloor-textbox-inner-text-main h5 {
+          white-space: nowrap;
+          font-size: 14px;
+          line-height: 21px;
+
+          display: flex;
+          align-items: center;
+          gap: 10px;
+      }
+
+      .flexfloor-textbox-inner-text-main h5::before {
+          content: "";
+          width: 4px;
+          height: 4px;
+          border-radius: 100px;
+          background: #2783D2;
+          display: inline-flex;
+
+      }
+  }
+</style>
+
+<div id="flexifloor-textbox">
+  <div class="flexifloor-textbox">
+    <h1>Flexifloor Tiles</h1>
+    <div class="flexfloor-textbox-inner-main">
+      <div class="flexfloor-textbox-inner-text-main">
+        <h5>6 Perfect Shades</h5>
+        <p>Expertly curated shades designed to bring elegance and warmth to any space.</p>
+      </div>
+      <div class="flexfloor-textbox-inner-text-main">
+        <h5>Easy to Install</h5>
+        <p>Detailed guides and support make it simple for anyone to achieve professional results.</p>
+      </div>
+      <div class="flexfloor-textbox-inner-text-main">
+        <h5>100% Eco-Friendly</h5>
+        <p>100% eco-friendly materials, ensuring sustainability without compromising on quality.</p>
+      </div>
+
+      <div class="flexfloor-textbox-inner-text-main">
+        <h5>Durable & Safe</h5>
+        <p>Built to withstand daily wear and tear. A secure, hypoallergenic surface for your home.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "flexifloor-textbox",
+  "settings":[],
+  "presets": [
+    {
+      "name" : "flexifloor-textbox"
+    }
+  ]
+}
+{% endschema %}

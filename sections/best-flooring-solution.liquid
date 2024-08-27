@@ -1,0 +1,108 @@
+<section class="Best-Flooring-solution">
+  <div class="flooring-comparison">
+    <div class="comparison-header">
+      <h2>{{ section.settings.heading }}</h2>
+    </div>
+    <div class="comparison-table">
+      <div class="row">
+        <div class="column others">
+          <h4>{{ section.settings.others_heading }}</h4>
+        </div>
+        <div class="column flexifloor">
+          <h4>{{ section.settings.flexifloor_heading }}</h4>
+        </div>
+      </div>
+      {% for item in section.blocks %}
+        <div class="row">
+          <div class="column others">
+            <span class="cross-icon">✕</span>
+            <p>{{ item.settings.others_text }}</p>
+          </div>
+          <div class="column flexifloor">
+            <span class="check-icon">✔</span>
+            <p>{{ item.settings.flexifloor_text }}</p>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+
+  <div class="cta-section">
+    <img src="{{ section.settings.cta_image | image_url }}" alt="Flooring Image" />
+    <div class="cta-content">
+      <h4>{{ section.settings.cta_heading }}</h4>
+      <a href="{{ section.settings.cta_button_link }}" class="cta-button">{{ section.settings.cta_button_text }}</a>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Best Flooring Solution",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Section Heading",
+      "default": "The Best Flooring Solution on the Market"
+    },
+    {
+      "type": "text",
+      "id": "others_heading",
+      "label": "Others Column Heading",
+      "default": "Others"
+    },
+    {
+      "type": "text",
+      "id": "flexifloor_heading",
+      "label": "Flexifloor Column Heading",
+      "default": "Flexifloor"
+    },
+    {
+      "type": "image_picker",
+      "id": "cta_image",
+      "label": "CTA Image"
+    },
+    {
+      "type": "text",
+      "id": "cta_heading",
+      "label": "CTA Heading",
+      "default": "Ready to enhance your space with Flexifloor?"
+    },
+    {
+      "type": "url",
+      "id": "cta_button_link",
+      "label": "CTA Button Link"
+    },
+    {
+      "type": "text",
+      "id": "cta_button_text",
+      "label": "CTA Button Text",
+      "default": "Shop Now"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "comparison_row",
+      "name": "Comparison Row",
+      "settings": [
+        {
+          "type": "text",
+          "id": "others_text",
+          "label": "Others Text"
+        },
+        {
+          "type": "text",
+          "id": "flexifloor_text",
+          "label": "Flexifloor Text"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Best Flooring Solution"
+    }
+  ]
+}
+{% endschema %}

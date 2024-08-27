@@ -1,0 +1,66 @@
+{
+  "name": "t:sections.header.name",
+  "type": "header",
+  "sections": {
+    "announcement-bar": {
+      "type": "announcement-bar",
+      "blocks": {
+        "announcement_MbDyyd": {
+          "type": "announcement",
+          "settings": {
+            "text": "Anouncement message 1",
+            "link": ""
+          }
+        },
+        "announcement_f9eHjR": {
+          "type": "announcement",
+          "settings": {
+            "text": "Anouncement message 2",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "announcement_MbDyyd",
+        "announcement_f9eHjR"
+      ],
+      "custom_css": [
+
+      ],
+      "settings": {
+        "color_scheme": "accent-2",
+        "show_line_separator": false,
+        "show_social": false,
+        "auto_rotate": true,
+        "change_slides_speed": 5,
+        "enable_country_selector": false,
+        "enable_language_selector": false
+      }
+    },
+    "header": {
+      "type": "header",
+      "custom_css": [
+
+      ],
+      "settings": {
+        "logo_position": "middle-left",
+        "menu": "main-menu",
+        "menu_type_desktop": "drawer",
+        "sticky_header_type": "none",
+        "show_line_separator": true,
+        "color_scheme": "inverse",
+        "menu_color_scheme": "",
+        "enable_country_selector": false,
+        "enable_language_selector": false,
+        "mobile_logo_position": "center",
+        "margin_bottom": 0,
+        "padding_top": 12,
+        "padding_bottom": 12
+      }
+    }
+  },
+  "order": [
+    "announcement-bar",
+    "header"
+  ]
+}
